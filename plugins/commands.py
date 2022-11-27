@@ -22,17 +22,15 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🔍 Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🤖', url=f'https://t.me/SECLK')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-                  ]]
+                    InlineKeyboardButton('Hᴇʟᴘ ℹ️', callback_data='help'),
+                    InlineKeyboardButton('Aʙᴏᴜᴛ 😊', callback_data='about'),
+                    InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 👤', callback_data="owner_info")
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -46,17 +44,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🔍 Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🤖', url=f'https://t.me/SECLK')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-                  ]]
+                    InlineKeyboardButton('Hᴇʟᴘ ℹ️', callback_data='help'),
+                    InlineKeyboardButton('Aʙᴏᴜᴛ 😊', callback_data='about'),
+                    InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 👤', callback_data="owner_info")
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -95,17 +91,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🔍 Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🤖', url=f'https://t.me/SECLK')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-                  ]]
+                    InlineKeyboardButton('Hᴇʟᴘ ℹ️', callback_data='help'),
+                    InlineKeyboardButton('Aʙᴏᴜᴛ 😊', callback_data='about'),
+                    InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 👤', callback_data="owner_info")
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -153,14 +147,10 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                         ]
-                        ]
+                        [[
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/SECL4U'),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/SECLK')
+                  ]]
                     )
                 )
             except FloodWait as e:
@@ -172,14 +162,10 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                         ]
-                        ]
+                       [[
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/SECL4U'),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/SECLK')
+                  ]]
                     )
                 )
             except Exception as e:
@@ -243,14 +229,10 @@ async def start(client, message):
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                   ],[
-                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                     ]
-                    ]
+                    [[
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/SECL4U'),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/SECLK')
+                  ]]
                 )
             )
             filetype = msg.media
@@ -286,14 +268,10 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
-            [
-             [
-              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-             ]
-            ]
+           [[
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/SECL4U'),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/SECLK')
+                  ]]
         )
     )
                     
@@ -486,16 +464,6 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
-                    callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
-                ),
-                InlineKeyboardButton(
-                    '✔ Oɴ' if settings["file_secure"] else '✘ Oғғ',
-                    callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
-                ),
-            ],
-            [
-                InlineKeyboardButton(
                     'Iᴍᴅʙ',
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
@@ -532,16 +500,6 @@ async def settings(client, message):
                 InlineKeyboardButton(
                     '10 Mɪɴs' if settings["auto_delete"] else '✘ Oғғ',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    'Aᴜᴛᴏ-Fɪʟᴛᴇʀ',
-                    callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
-                ),
-                InlineKeyboardButton(
-                    '✔ Oɴ' if settings["auto_ffilter"] else '✘ Oғғ',
-                    callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
                 ),
             ],
         ]
