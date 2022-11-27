@@ -5,21 +5,16 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/DQ_The_File_Donor_Updates'>Jᴏᴇʟ Kᴜʀɪᴀɴ Bɪᴊᴜ</a>
-✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
-✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://studio.mogenius.com'>Mᴏɢᴇɴɪᴜs</a>
-✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.0.3 [ Sᴛᴀʙʟᴇ ]</b>"""
-
-    SOURCE_TXT = """<b>ɴᴏᴛᴇ:
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-- ꜱᴏᴜʀᴄᴇ - <a href="https://github.com/Joelkb/DQ-The-File-Donor">ʜᴇʀᴇ</a>
-Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/creatorbeatz">Jᴏᴇʟ ᠰ TɢX</a></b>"""
-
-    MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
+    ABOUT_TXT =  """
+𝙷𝚎𝚛𝚎 𝚊𝚛𝚎 𝚜𝚘𝚖𝚎 𝚍𝚎𝚝𝚊𝚒𝚕𝚜 𝚢𝚘𝚞 𝚗𝚎𝚎𝚍 𝚝𝚘 𝚔𝚗𝚘𝚠.
+✯ 𝙱𝙾𝚃 𝚃𝚈𝙿𝙴 : 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝚅𝟹	
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href="https://t.me/About_Sandaruwan">𝚂𝚊𝚑𝚊𝚗 𝚂</a>
+✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽3 
+✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚟𝟹.𝟷.𝟷 [ 𝙱𝙴𝚃𝙰 ]
+✯ 𝚂𝙾𝚄𝚁𝙲𝙴 : 🔐""" 
+    
+MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 <b>ɴᴏᴛᴇ:</b>
 1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
@@ -38,7 +33,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/DQ_The_File_Donor_Updates)</code>
+<code>[Button Text](buttonurl:https://t.me/SECLK)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
@@ -134,9 +129,10 @@ Nᴀᴍᴇ - {}"""
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴊᴏᴇʟ ᴋᴜʀɪᴀɴ ʙɪᴊᴜ
-• ᴜꜱᴇʀɴᴀᴍᴇ : @creatorbeatz
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/creatorbeatz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+• ꜰᴜʟʟ ɴᴀᴍᴇ : 𝚂𝚊𝚑𝚊𝚗 𝚂𝚊𝚗𝚍𝚊𝚛𝚞𝚠𝚊𝚗
+• ᴀʙᴏᴜᴛ : <a href='https://t.me/About_Sandaruwan'>ᴀʙᴏᴜᴛ sᴀɴᴅᴀʀᴜᴡᴀɴ</a>
+• ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/Sandaruwan_Feedback_Bot'>sᴀʜᴀɴs</a></b>
+"""
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
@@ -152,7 +148,7 @@ Nᴀᴍᴇ - {}"""
 
 ɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ
 
-ᴇxᴀᴍᴘʟᴇ : Uncharted
+ᴇxᴀᴍᴘʟᴇ : Uncharted | Dune 2021
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)"""
 
@@ -163,7 +159,7 @@ Nᴀᴍᴇ - {}"""
 
 ɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ
 
-ᴇxᴀᴍᴘʟᴇ : Loki S01E01
+ᴇxᴀᴍᴘʟᴇ : Loki S01E01 | You S03
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)"""
 
@@ -177,26 +173,22 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+<code>{file_name}</code>
 
-<b>
-╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
-╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
-=========== • ✠ • ===========</b>"""
+<b><a href="https://t.me/SECL4U">®️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ</a></b> | <b><a href="https://t.me/SECLK">®️ sᴇᴄ ʙᴏᴛs</a></b>
+"""
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
-IMDb Data:
+<b>🪄 𝚀𝚞𝚎𝚛𝚢 ➠ {query}
 
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+𝚃𝚒𝚝𝚕𝚎 ➠ <i><a href={url}>{title}</a> ({year})
+{release_date} • {runtime}min</i>
+
+𝙶𝚎𝚗𝚛𝚎 ➠ <i>{genres}</i>
+𝚁𝚊𝚝𝚒𝚗𝚐 ⭐️ ➠ <i>{rating}/10 ({votes})</i>
+𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎 ➠ <i>{languages}</i></b>
+
+<b><a href="https://t.me/SECLK">®️ sᴇᴄ ʙᴏᴛs</a></b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
