@@ -1132,8 +1132,8 @@ async def auto_filter(client, msg, spoll=False):
             url=imdb['url'],
             **locals()
         )
-else:
-        cap = f"Here is what i found for your query {search}"
+  else:
+        cap = f"Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}"
     if imdb and imdb.get('poster'):
         try:
             fmsg= await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -1144,12 +1144,11 @@ else:
             fmsg= await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            fmsg= await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+           fmsg= await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
         fmsg= await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(600)
-        await fmsg.delete()
-        
+         await asyncio.sleep(600)
+         await fmsg.delete()
     if spoll:
         await msg.message.delete()
 
@@ -1206,7 +1205,7 @@ async def advantage_spell_chok(msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
                     reply_markup=InlineKeyboardMarkup(btn))
-
+    
 async def manual_filters(client, message, text=False):
     settings = await get_settings(message.chat.id)
     group_id = message.chat.id
