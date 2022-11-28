@@ -716,7 +716,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("alalert"):
         ident, from_user = query.data.split("#")
-        if int(query.from_user.id) == int(from_user):
+        if  int(query.from_user.id) == int(from_user):
             user = await client.get_users(from_user)
             await query.answer(f"Hᴇʏ {user.first_name}, Yᴏᴜʀ Rᴇᴏ̨ᴜᴇsᴛ ɪs Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ !", show_alert=True)
         else:
