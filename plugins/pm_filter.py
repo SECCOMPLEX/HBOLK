@@ -1132,7 +1132,7 @@ async def auto_filter(client, msg, spoll=False):
             url=imdb['url'],
             **locals()
         )
-   else:
+     else:
         cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ{search}.</b>"
     if imdb and imdb.get('poster'):
         try:
@@ -1212,8 +1212,8 @@ async def auto_filter(client, msg, spoll=False):
                     await message.delete()
     if spoll:
         await msg.message.delete()
-        
-        
+
+
 async def advantage_spell_chok(client, msg):
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
