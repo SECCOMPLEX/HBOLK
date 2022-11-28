@@ -43,19 +43,7 @@ class Bot(Client):
         self.username = '@' + me.username
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
-        users = await db.get_all_users()
-        async for user in users:
-            try:
-                await self.send_message(chat_id=int(f"{user['id']}"), text="<b>Bot Restarted !</b>")
-            except UserIsBlocked:
-                logging.info(f"{str(user['id'])} -Blocked the bot.")
-            except PeerIdInvalid:
-                await db.delete_user(int(user['id']))
-                logging.info(f"{str(user['id'])} - Removed from Database, since PeerIdInvalid.")
-            except InputUserDeactivated:
-                await db.delete_user(int(user['id']))
-                logging.info(f"{str(user['id'])} - Removed from Database, since deleted account.")
-
+        
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
