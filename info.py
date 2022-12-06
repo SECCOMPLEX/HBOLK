@@ -1,6 +1,7 @@
 import re
 from os import environ
 from Script import script 
+const PORT = process.env.PORT || 5000
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
