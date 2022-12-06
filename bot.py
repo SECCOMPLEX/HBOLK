@@ -1,12 +1,12 @@
 import logging
 import logging.config
-web: uvicorn api:app --port $PORT --host 0.0.0.0 
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
+web: uvicorn api:app --port $PORT --host 0.0.0.0 
 
 from pyrogram import Client, __version__
 from pyrogram.errors import UserIsBlocked, PeerIdInvalid, InputUserDeactivated
