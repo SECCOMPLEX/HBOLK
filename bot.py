@@ -1,5 +1,6 @@
 import logging
 import logging.config
+web: uvicorn api:app --port $PORT --host 0.0.0.0 
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
