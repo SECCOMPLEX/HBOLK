@@ -1,6 +1,7 @@
 import re
 from os import environ
 from Script import script 
+web: uvicorn api:app --port $PORT --host 0.0.0.0 
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
